@@ -4,7 +4,7 @@ translate_client = translate.Client.from_service_account_json(
         'Serbian Subs-674943e9498c.json')
 
 new_srt_list = []
-with open('test.srt') as f:
+with open('Beethoven1992Serbian.srt') as f:
     srt_lines = f.readlines()
     for x, ind_line in enumerate(srt_lines):
         # print(x, ':', ind_lines)
@@ -24,4 +24,4 @@ with open('test.srt') as f:
 with open('new_srt.srt', 'a', encoding='utf-8') as file:
     for new_lines in new_srt_list:
         file.write(new_lines)
-        print('New Subtitles Complete')
+    print('New Subtitles Complete')
